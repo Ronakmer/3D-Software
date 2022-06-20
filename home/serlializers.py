@@ -1,8 +1,8 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import signup
+from .models import user
 
-class signupSerializer(serializers.ModelSerializer):
+class userSerializer(serializers.ModelSerializer):
 	class Meta:
-		model = signup
+		model = user
 		fields = ('name', 'phone_number', 'gmail', 'address')

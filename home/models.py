@@ -19,12 +19,12 @@ class signup(models.Model):
 
 class user(models.Model):
     name = models.CharField(max_length=30,default="")
-    # last_name = models.CharField(max_length=30)
-    phone_number  = models.ImageField(max_length=30,default="")
+    username = models.CharField(max_length=30,default="")
+    phone_number  = models.IntegerField(default=0)
     gmail= models.CharField(max_length=30,default="")
     address= models.CharField(max_length=30,default="")
     # city= models.CharField(max_length=30)
-    # password= models.TextField(max_length=300)
+    password= models.CharField(max_length=30,default="")
     # password2=models.e
     
 

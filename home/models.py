@@ -21,8 +21,10 @@ class user(models.Model):
     name = models.CharField(max_length=30,default="")
     username = models.CharField(max_length=30,default="")
     phone_number  = models.IntegerField(default=0)
-    gmail= models.CharField(max_length=30,default="")
+    gmail= models.EmailField(max_length=30,default="")
     address= models.CharField(max_length=30,default="")
+    ipaddress= models.CharField(max_length=30,default="")
+    macaddress= models.CharField(max_length=30,default="")
     # city= models.CharField(max_length=30)
     password= models.CharField(max_length=30,default="")
     # password2=models.e

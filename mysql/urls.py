@@ -18,7 +18,7 @@ from django.urls import path,include
 from home import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/admin', admin.site.urls),
     path('',include('home.urls') ),
     # path('api/',include('home.urls')),
     path('api/create/', views.add_items, name='add_items'),

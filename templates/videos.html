@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!-- Template Stylesheet -->
-    <link  rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link  rel="stylesheet" href="{% static 'css/style1.css' %}">
 
     {% comment %} ******************************************* {% endcomment %}
 
@@ -59,10 +59,10 @@
 
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                  <a href="userpage" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Infinite Ai</h3>
                 </a>
                 <div class="navbar-nav w-100">
                     <a href="userpage"  class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
@@ -75,7 +75,7 @@
                   
                 </div>
             </nav>
-        </div>
+        </div> 
         <!-- Sidebar End -->
 
 
@@ -86,14 +86,25 @@
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
-                <a href="#" class="sidebar-toggler flex-shrink-0">
+                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="bi bi-list"></i>
-                </a>
+                </a> 
+                {% comment %} <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Infinite Ai</h3> {% endcomment %}
+
            
                 <div class="navbar-nav align-items-center ms-auto">
-                   
+                    {% comment %} <div class="navbar-nav w-100">
+                        <a href="userpage" class="nav-item nav-link active"><i class="bi bi-speedometer2"></i> &nbsp Dashboard</a>
+                        <br>
+                        <a href="videos" class="nav-item nav-link active"><i class="bi bi-camera-reels"></i> &nbsp Videos</a>
+                        <br>
+                        
+                       
+                            
+                        
+                    </div> {% endcomment %}
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-item nav-link active dropdown-toggle" data-bs-toggle="dropdown">
                             {% comment %} <img class="rounded-circle me-lg-2" src="/static/img/logo.jpg" alt="" style="width: 40px; height: 40px;"> {% endcomment %}
                             <span class="d-none d-lg-inline-flex">XYZ</span>
                         </a>

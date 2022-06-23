@@ -76,7 +76,7 @@ body {
 </head>
 <body class="text-left">
 
-<form class="form-signin" method="post" action="/login?return={{request.get_full_path}}" >
+<form class="form-signin" method="post" action="/userpage?return={{request.get_full_path}}" >
   {% csrf_token %}
 {% comment %} <img class="mb-4" src="/static/img/logo.jpg" alt="" width="72" height="72"> {% endcomment %}
 <div align="center">
@@ -91,7 +91,9 @@ body {
   <input type="checkbox" value="remember-me"> Remember me
 </label> {% endcomment %}
 </div>
-<button class="btn btn-lg btn-primary btn-block" align="center" type="submit">Sign in</button>
+<div align="center">
+<button class="btn btn-lg btn-primary btn-block"  type="submit">Sign in</button>
+</div>
 {% comment %} <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p> {% endcomment %}
 </form>
 

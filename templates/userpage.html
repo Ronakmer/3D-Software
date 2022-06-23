@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    {% comment %} <link href="img/favicon.ico" rel="icon"> {% endcomment %}
 
    
     <!-- Icon Font Stylesheet -->
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!-- Template Stylesheet -->
-    <link  rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link  rel="stylesheet" href="{% static 'css/style1.css' %}">
 
     {% comment %} ******************************************* {% endcomment %}
 
@@ -59,10 +59,10 @@
 
 
         <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
+         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                  <a href="userpage" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Infinite Ai</h3>
                 </a>
     
                 <div class="navbar-nav w-100">
@@ -71,13 +71,13 @@
                     <a href="videos" class="nav-item nav-link active"><i class="bi bi-camera-reels"></i> &nbsp Videos</a>
                     <br>
                     
-                   
+                    
                         </div>
                     </div>
                     
                 </div>
             </nav>
-        </div>
+        </div> 
         <!-- Sidebar End -->
 
 
@@ -90,20 +90,32 @@
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="bi bi-list"></i>
+                    {% comment %} <i class="fa fa-bars"></i> {% endcomment %}
+                    {% comment %} <i class="fa fa-bars" aria-hidden="true"></i> {% endcomment %}
                 </a>
-      
+                {% comment %} <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Infinite Ai</h3> {% endcomment %}
+                
+                
                 <div class="navbar-nav align-items-center ms-auto">
-             
+                    {% comment %} <div class="navbar-nav w-100">
+                        <a href="#" class="nav-item nav-link active"><i class="bi bi-speedometer2"></i> &nbsp Dashboard</a>
+                        <br>
+                        <a href="videos" class="nav-item nav-link active"><i class="bi bi-camera-reels"></i> &nbsp Videos</a>
+                        <br>
+
+                        
+    
+                    </div> {% endcomment %}
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-item nav-link active dropdown-toggle" data-bs-toggle="dropdown">
                             {% comment %} <img class="rounded-circle me-lg-2" src="/static/img/logo.jpg" alt="" style="width: 40px; height: 40px;"> {% endcomment %}
                             <span class="d-none d-lg-inline-flex">XYZ</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            {% comment %} <a href="#" class="dropdown-item">My Profile</a> {% endcomment %}
+                            <a href="resetpassword" class="dropdown-item">Reset-Password</a>
                             {% comment %} <a href="#" class="dropdown-item">Settings</a> {% endcomment %}
                           {% comment %} <a href="#" class="dropdown-item" data-bs-target="#signupModal" data-bs-toggle="modal" onclick="document.getElementById('close_btn_login').click()">Add User?</a> {% endcomment %}
-                            <form action="/index?return={{request.get_full_path}}" method="post">
+                            <form action="/login?return={{request.get_full_path}}" method="post">
                                 {% csrf_token %}
                                 <button class="dropdown-item" type="submit">Logout</button>
                                
@@ -115,11 +127,20 @@
             <!-- Navbar End -->
 
 
-            <!-- Sale & Revenue Start -->
-
+            <!-- Container Start -->
+            <br>
+          
             <div class="container mt-5">
                 <table class="table table-borderless table-hover">
+                    
                     <thead>
+                       <tr>
+                        <div style="margin-left:250px">
+                            <h3 class="text-primary">User Detail</h3>
+                        </div>
+                        
+                            
+                      </tr>
                       <tr>
                         <th scope="col">Name</th>
                         <td>XYZ</td>
@@ -130,7 +151,6 @@
                       <tr>
                         <th scope="col">Phone Number</th>
                         <td>3692581470</td>
-                       
                       </tr>
                       <tr>
                         <th scope="col">E-mail</th>
@@ -152,11 +172,16 @@
                         <td>e8:2a:44:27:52:fa</td>
                         
                       </tr>
+                      <tr>
+                        <th scope="col">Licence</th>
+                        <td>Volume</td>
+                        
+                      </tr>
                     </tbody>
                   </table>
                 </div>
                 
-            <!-- Widgets End -->
+            <!-- Container End -->
 
 
             
@@ -183,7 +208,7 @@
     <script  src="{% static 'js/main.js' %}"></script>
     {% comment %} model {% endcomment %}
      
-    <div class="modal fade overflow-auto" id="signupModal" tabindex="-1" aria-labelledby="signupModel" aria-hidden="true">
+    {% comment %} <div class="modal fade overflow-auto" id="signupModal" tabindex="-1" aria-labelledby="signupModel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header  bg-warning">
@@ -203,11 +228,11 @@
                             <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone Numer"
                                 required>
                         </div>
-                        {% comment %} <div class="mb-3">
+                         <div class="mb-3">
                             <label for="lname" class="form-label">User Name</label>
                             <input type="text" class="form-control" id="username" name="username" placeholder="username"
                                 required>
-                        </div> {% endcomment %}
+                        </div> 
                        
                         <div class="mb-3">
                             <label for="email" class="form-label">Gmail</label>
@@ -224,7 +249,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
     
     {% endblock body %}
 </body>

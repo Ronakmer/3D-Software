@@ -81,7 +81,7 @@ body {
         {% csrf_token %}
         {% comment %} <img class="mb-4" src="/static/img/logo.jpg" alt="" width="72" height="72"> {% endcomment %}
         <div style="margin-left:550px">
-        <h1 class="h3 mb-3 font-weight-normal" align="center">Update</h1>
+        <h1 class="h3 mb-3 font-weight-normal" align="center">My Profile</h1>
         
         
         
@@ -91,12 +91,12 @@ body {
         <input name="username" class="form-control"  value="{{ mymember.username }}">
         <label for="inputText" class="sr-only">E-Mail</label>
         <input name="gmail" class="form-control"  value="{{ mymember.gmail }}">
-        <label for="inputText" class="sr-only">Address</label>
-        <input name="address" class="form-control"  value="{{ mymember.address }}">
+        {% comment %} <label for="inputText" class="sr-only">Address</label>
+        <input name="address" class="form-control"  value="{{ mymember.address }}"> {% endcomment %}
         <label for="inputText" class="sr-only">Phone Number</label>
         <input name="phone"  class="form-control" value="{{ mymember.phone_number }}">
-        {% comment %} <label for="inputPassword" class="sr-only">Password</label>
-        <input name="password"  class="form-control" value="{{ mymember.password }}">  {% endcomment %}
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password"  class="form-control" value="{{ mymember.password }}">
     
         <div class="checkbox mb-3">
         {% comment %} <label>
@@ -106,7 +106,7 @@ body {
         <div align="center">
         {% comment %} <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> {% endcomment %}
         <button class="btn btn-lg btn-primary btn-block" align="center" type="submit">Close</button>
-        <button class="btn btn-lg btn-primary btn-block" align="center" type="submit">Update</button>
+        <button class="btn btn-lg btn-primary btn-block" align="center" type="submit">Save</button>
         </div>
     </div>
         {% comment %} <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p> {% endcomment %}

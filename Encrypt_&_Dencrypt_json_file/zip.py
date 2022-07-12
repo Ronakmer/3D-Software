@@ -29,8 +29,8 @@ with open (fileName, 'wb') as encrypted_file:
 
 # *********************** decrypted folder ***********************
 
-f = Fernet(input('Enter Key: '))
-# f = Fernet(key)
+# f = Fernet(input('Enter Key: '))
+f = Fernet(key)
 with open(fileName, 'rb') as encrypted_file:
     encrypted = encrypted_file.read()
 

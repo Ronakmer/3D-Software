@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>956</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="main_1_horizontalLayout">
+     <item>
+      <widget class="QFrame" name="top_frame">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(36, 36, 36);
+
+
+border-bottom: 3px solid  rgb(72, 72, 72);
+/*background-color: rgb(135, 135, 135);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+
+/*background-color: rgb(36, 36, 36);*/
+
+border-bottom: 2px solid  rgb(36, 36, 36);</string>
+            </property>
+            <property name="text">
+             <string>Education 3D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>50</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">
+
+
+
+QLineEdit{
+background-color:rgb(11, 11, 11);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:2px;
+border-radius:15px;
+border-color:rgb(11, 11, 11);
+
+padding:6px
+}
+QLineEdit:focus{
+
+	border-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Search</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:14px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/search.png</normaloff>icon/search.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+
+border-style:outset;
+border-width:0px;
+border-radius:15px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Import  Models</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(36, 36, 36);
+
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:15px;
+border-color: rgb(62, 62, 62);
+padding:6px</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/setting.png</normaloff>icon/setting.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="main_2_horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="left_widget" native="true">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(36, 36, 36);</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:50px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>   Home</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/home.png</normaloff>icon/home.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>15</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="popular_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:40px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>   Popular</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/popular.png</normaloff>icon/popular.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>10</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="history_btn_2">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:50px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string> History </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/history.png</normaloff>icon/history.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="categories_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:25px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>  Categories </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/categories.png</normaloff>icon/categories.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="favorites_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:35px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>  Favorites </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/favorites.png</normaloff>icon/favorites.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+
+font: 75 italic 16pt &quot;Perpetua&quot;;
+
+</string>
+            </property>
+            <property name="text">
+             <string>CATEGORIES</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="mathematics_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:30px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>  Mathematics </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/mathematics.png</normaloff>icon/mathematics.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="history_sub_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:65px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>   History </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/history_sub.png</normaloff>icon/history_sub.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="science_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:65px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>  Science </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/science.png</normaloff>icon/science.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="arts_btn">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+QPushButton{
+background-color: rgb(36, 36, 36);
+color: rgb(255, 255, 255);
+background-position:center left;
+padding-right:90px;
+border-radius:0px;
+border-color: rgb(62, 62, 62);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>  Arts </string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icon/arts.png</normaloff>icon/arts.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 16pt &quot;Perpetua&quot;;</string>
+            </property>
+            <property name="text">
+             <string>STANDARDS</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(85, 255, 255);</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="main_widget" native="true">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(11, 11, 11);</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Explore by Subjects</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="1">
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 127);</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QWidget" name="widget_2" native="true"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 0);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QWidget" name="subject_widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="language_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>LANGUAGE</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="biology_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>BIOLOGY</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="evs_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>EVS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="physics_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>PHYSICS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="history_sub2_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>HISTORY</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="maths_btn_2">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+
+
+QPushButton{
+background-color:  rgb(62, 62, 62);
+color: rgb(255, 255, 255);
+border-style:outset;
+border-width:0px;
+border-radius:12px;
+border-color: rgb(62, 62, 62);
+padding:6px
+}
+QPushButton:hover{
+background-color: rgb(106, 106, 106);
+}
+</string>
+               </property>
+               <property name="text">
+                <string>MATHS</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>550</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 255, 255);</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>500</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
